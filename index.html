@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Nanum+Gothic&family=Poppins:wght@300&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.6.96/css/materialdesignicons.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Corona Vírus</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="https://cdn.cgn.inf.br/cgn-cdn/fotos-cgn/2021/11/08092439/simbolo-ebc.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Coronavirus
+        </a>
+    </nav>
+
+    <main class="container-fluid">
+        <div class="row divLabelCovid">
+            <p>COVID19</p>
+        </div>
+        <div class="row divLabelPainel">
+            <div class="col-6">
+                <p><b>Painel</b> Coronavírus</p>
+            </div>
+            <div class="col-6 divSlcPais">
+                País: 
+                <select class="form-control" id="slcPais" style="width: 200px; display: inline;" onchange="getStatisticCovid(this.value)">
+                    <option value="">Selecione</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row mt-4 cards">
+            <div class="col-lg-4 col-md-4 col-sm-12 card-estatistica card-1">
+                <div class="divCasosRecuperados">
+                    <p>Casos recuperados</p>
+                    <p id="casosRecuperados">...</p>
+                </div>
+                <div class="divCasosEmAcompanhamento mt-4">
+                    <p>Recuperados recente</p>
+                    <p id="recuperadosRecente">...</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 card-estatistica card-2">
+                <p>Casos confirmados</p>
+                <div>
+                    <label>Total de casos:</label>
+                    <p id="totalDeCasos">...</p>
+                </div>
+                <div>
+                    <label>Casos ativos:</label>
+                    <p id="casosAtivos">...</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 card-estatistica card-3">
+                <p>Óbitos confirmados</p>
+                <div>
+                    <label>Total de óbitos:</label>
+                    <p id="totalDeObitos">...</p>
+                </div>
+                <div>
+                    <label>Letalidade:</label>
+                    <p id="taxaLetalidade">...</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="mt-5" style="width: 95%;">
+
+        <!-- Ranking -->
+        <div class="row divLabelCovid mt-5">
+            <p>RANKING</p>
+        </div>
+        <div class="row divLabelPainel">
+            <p><b>Países</b> mais afetados</p>
+        </div>
+
+        <div>
+            <table class="tableRanking">
+                <tr class="firstTr">
+                    <td class="w1">Lugar</td>
+                    <td class="w2">País</td>
+                    <td class="w3">Casos</td>
+                    <td class="w4">Óbitos</td>
+                </tr>
+                <tbody id="dynamicTable"></tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <hr class="mt-5" style="width: 95%;">
+
+    <footer>
+        <div class="row mt-5">
+            <div class="col-12 text-center mt-4">Redes Sociais</div>
+            <div class="col-12 text-center mt-3 redesSociais">
+                <a href="https://www.instagram.com/allan_gomes7/"><i class="mdi mdi-instagram"></i></a>
+                <a href="https://twitter.com/allan_gomesx"><i class="mdi mdi-twitter"></i></a>
+                <a href="https://www.facebook.com/allan.gomes.14289/"><i class="mdi mdi-facebook"></i></a>
+                <a href="https://github.com/allansgx"><i class="mdi mdi-github"></i></a>
+            </div>
+            
+            <div class="col-12 text-center mt-5">Desenvolvido por Allan S.G.</div>
+            <div class="col-12 text-center">Copyright © - 2022.</div>
+        </div>
+    </footer>
+
+    <script defer src="js/main.js"></script>
+</body>
+
+</html>

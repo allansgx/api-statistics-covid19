@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+body {
+    background-color: #F3FAF8;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--cor-primaria);
+    border-radius: 20px;
+  }
+
+body::-webkit-scrollbar {
+    width: 10px; 
+}
+  
+body::-webkit-scrollbar-track {
+    background: rgb(200, 200, 200);
+}
+
+:root {
+    --cor-primaria: #1DA584;
+    --cor-destaque: #B572CD;
+}
+
+.container-fluid {
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    font-weight: 700;
+    box-shadow: 0 1px 7px #868686;
+    padding: 13px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.divSlcPais {
+    text-align: center;
+}
+
+.divLabelCovid {
+    color: var(--cor-primaria);
+    font-family: 'Righteous', cursive !important;
+    font-size: 12px;
+}
+
+.divLabelCovid p {
+    margin: 0;
+}
+
+.divLabelPainel {
+    font-size: 22px;
+}
+
+/* --> Cards */
+.cards {
+    gap: 15px;
+    margin: 0;
+}
+
+.card-estatistica {
+    border-radius: 10px;
+    height: 200px;
+    box-shadow: 0 1px 7px #868686;
+}
+
+/* --- Card 1 */
+.card-estatistica{
+    transition: all 0.4s ease;
+}
+.card-estatistica:nth-child(1) {
+    background-color: var(--cor-primaria);
+    color: white;
+}
+.card-estatistica:nth-child(2) {
+    border-top: 5px solid green;
+}
+.card-estatistica:nth-child(3) {
+    border-top: 5px solid gray;
+}
+
+.card-estatistica:nth-child(1):hover {
+    background-color: #003a2b;
+}
+.card-estatistica:nth-child(2):hover {
+    background-color: #eeeeee;;
+}
+.card-estatistica:nth-child(3):hover {
+    background-color: #eeeeee;
+}
+
+.card-1 .divCasosRecuperados {
+    margin-top: 20px;
+}
+
+.card-1 p {
+    margin: 0;
+}
+
+.card-1 p:nth-child(1), p:nth-child(3) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #B8E3D8;
+}
+.card-1 p:nth-child(2), p:nth-child(4) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+/* ---  Card 2 */
+.card-2 label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.card-2 p:nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 15px;
+    color: var(--cor-primaria);
+    text-transform: uppercase;
+}
+
+.card-2 p:nth-child(2) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card-2 #novosCasos {
+    font-size: 12px;
+    color: #606060;
+    padding-left: 2px;
+}
+
+/* ---  Card 3 */
+.card-3 label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.card-3 p:nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 15px;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.card-3 p:nth-child(2) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card-3 #novosCasos {
+    font-size: 12px;
+    color: #606060;
+    padding-left: 2px;
+}
+
+/* Ranking */
+.tableRanking::-webkit-scrollbar-thumb {
+    background-color: var(--cor-primaria);
+    border-radius: 20px;
+  }
+
+.tableRanking::-webkit-scrollbar {
+    width: 10px; 
+}
+  
+.tableRanking::-webkit-scrollbar-track {
+    background: rgb(200, 200, 200);
+}
+
+.tableRanking {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.tableRanking .firstTr {
+    background: #1DA584;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.w1 {
+    min-width: 65px;
+    padding: 5px;
+}
+.w2 {
+    min-width: 130px;
+}
+.w3 {
+    min-width: 105px;
+}
+.w4 {
+    min-width: 100px;
+}
+
+/* Rodapé */
+footer {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    height: 200px;
+    background: #00ca90;
+    color: white;
+    box-shadow: 0 1px 7px #3f3f3f;
+}
+
+footer .redesSociais a {
+    color: #ffff;
+    padding: 10px;
+    box-shadow: 0 1px 7px black;
+    background-color: #009b6e;
+    margin-left: 8px;
+
+    transition: all 0.4s ease;
+}
+
+footer .redesSociais a:hover {
+    background-color: #04dda0;
+    font-size: 20px;
+}
+
+footer .redesSociais a i {
+    font-size: 25px;
+}
+
+@media (min-width: 768px) {
+    .container-fluid {
+        margin: 20px;
+    }
+
+    .navbar a {
+        padding-left: 20px;
+    }
+
+    .card-estatistica:nth-child(1) {
+        width: 25%;
+    }
+
+    .tableRanking {
+        width: 409px;
+    }
+}
+
+@media (max-width: 768px) {
+    .divSlcPais {
+        text-align: left;
+    }
+
+    #slcPais {
+        width: 120px !important;
+        display: block;
+    }
+
+    .card-estatistica:nth-child(1) {
+        width: 95%;
+    }
+    .card-estatistica:nth-child(2) {
+        width: 95%;
+    }
+    .card-estatistica:nth-child(3) {
+        width: 95%;
+    }
+}
