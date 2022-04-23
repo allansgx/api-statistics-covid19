@@ -95,7 +95,7 @@ function listarRank() {
                     var totalObitos = formatarValor(val.TotalDeaths);
 
                     html += `<tr>
-                                <th class="w1">${val.rank}</th>
+                                <th class="w1">${val.rank}º</th>
                                 <th class="w2">${val.Country}</th>
                                 <th class="w3">${totalCasos}</th>
                                 <th class="w4">${totalObitos}</th>
