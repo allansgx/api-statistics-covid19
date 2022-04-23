@@ -87,7 +87,7 @@ function listarRank() {
     fetch('https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/npm-covid-data/', options)
         .then(response => response.json())
         .then(response => {
-            console.log(response)
+            // console.log(response)
             response.forEach(val => {
 
                 if (val.rank > 0) {
